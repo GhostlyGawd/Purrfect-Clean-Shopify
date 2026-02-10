@@ -1,0 +1,26 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_hero_q7qq8Y": {
+      "type": "custom-hero",
+      "name": "Custom Hero",
+      "settings": {
+        "title": "Never Scoop Again.",
+        "subtitle": "The Future of Cat Care.",
+        "description": "The PurrfectClean Ultra automatically cleans, neutralizes odors, and tracks your cat's health.",
+        "price": "499"
+      }
+    }
+  },
+  "order": [
+    "custom_hero_q7qq8Y"
+  ]
+}
