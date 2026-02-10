@@ -1,142 +1,96 @@
+
 {
   "sections": {
-    "image_banner": {
+    "hero": {
       "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify://shop_images/cat-litter-box.jpg",
+        "image_overlay_opacity": 50,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
+      },
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "The Last Litter Box You'll Ever Need",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "The PurrfectPotty is the revolutionary self-cleaning litter box that does the dirty work for you. Say goodbye to scooping, scraping, and scrubbing for good.",
+            "text_style": "body"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify://products/the-purrfectpotty"
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
+      "block_order": ["heading", "text", "buttons"]
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "features": {
+      "type": "multicolumn",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
+        "title": "Finally, a Litter Box That Cleans Itself",
+        "heading_size": "h1",
+        "image_width": "full",
         "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
         "color_scheme": "scheme-1",
+        "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 36
-      }
+      },
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon-cat.png",
+            "title": "Automatic Cleaning",
+            "text": "<p>The PurrfectPotty automatically cleans itself after every use, so you can spend less time cleaning and more time with your furry friend.</p>"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon-odor.png",
+            "title": "Odor-Free Home",
+            "text": "<p>The enclosed design and carbon-filtered ventilation system trap and eliminate odors, keeping your home smelling fresh and clean.</p>"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon-health.png",
+            "title": "Health Monitoring",
+            "text": "<p>Track your cat's litter box habits and weight through our mobile app, so you can monitor their health and well-being.</p>"
+          }
+        }
+      },
+      "block_order": ["column1", "column2", "column3"]
     },
     "video": {
       "type": "video",
       "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "heading": "See It In Action",
+        "video_url": "https://www.youtube.com/watch?v=some-video-id",
         "heading_size": "h1",
         "description": "",
         "full_width": false,
@@ -145,66 +99,55 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "reviews": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "scheme-1",
+        "container_color_scheme": "scheme-2",
+        "open_first_collapsible": false
+      },
       "blocks": {
-        "column1": {
-          "type": "column",
+        "question1": {
+          "type": "collapsible_row",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "heading": "What makes the PurrfectPotty different?",
+            "row_content": "<p>The PurrfectPotty is the only litter box that combines automatic cleaning, odor control, and health monitoring in one sleek and modern design.</p>"
           }
         },
-        "column2": {
-          "type": "column",
+        "question2": {
+          "type": "collapsible_row",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Is it safe for my cat?",
+            "row_content": "<p>Yes! The PurrfectPotty is designed with your cat's safety in mind. It features a weight-sensitive sensor that prevents the cleaning cycle from running when your cat is inside.</p>"
           }
         },
-        "column3": {
-          "type": "column",
+        "question3": {
+          "type": "collapsible_row",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "heading": "What if my cat doesn't like it?",
+            "row_content": "<p>We offer a 90-day money-back guarantee, so you can try the PurrfectPotty risk-free. If your cat doesn't love it, simply return it for a full refund.</p>"
           }
         }
       },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
+      "block_order": ["question1", "question2", "question3"]
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
+    "hero",
+    "features",
     "video",
-    "multicolumn"
+    "reviews",
+    "faq"
   ]
 }

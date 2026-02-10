@@ -1,0 +1,124 @@
+
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title"
+        },
+        "price": {
+          "type": "price"
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector"
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description"
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "reviews": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "question1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the PurrfectPotty?",
+            "row_content": "<p>The PurrfectPotty is a self-cleaning litter box that automatically cleans and disposes of cat waste, so you don't have to.</p>",
+            "page": ""
+          }
+        },
+        "question2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does it work?",
+            "row_content": "<p>The PurrfectPotty uses a combination of sensors and a motorized rake to automatically scoop waste into a sealed, odor-controlled compartment.</p>",
+            "page": ""
+          }
+        },
+        "question3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it easy to clean?",
+            "row_content": "<p>Yes! The waste compartment is disposable and can be easily replaced every few weeks. The rest of the unit can be wiped down with a damp cloth.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "question1",
+        "question2",
+        "question3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "scheme-1",
+        "container_color_scheme": "scheme-2",
+        "open_first_collapsible": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "reviews",
+    "faq"
+  ]
+}
