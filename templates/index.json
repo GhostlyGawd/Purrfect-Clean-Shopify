@@ -1,147 +1,26 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "hero": {
-      "type": "featured-product",
+    "custom_hero_q7qq8Y": {
+      "type": "custom-hero",
+      "name": "Custom Hero",
       "settings": {
-        "product": "the-purrfectpotty",
-        "media_position": "left",
-        "media_size": "two-thirds",
-        "color_scheme": "scheme-1",
-        "secondary_background": false,
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      },
-      "blocks": {
-        "title": { "type": "title", "settings": {} },
-        "rating": { "type": "rating", "settings": {} },
-        "price": { "type": "price", "settings": {} },
-        "description": { "type": "description", "settings": {} },
-        "features": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div style='display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; margin-bottom: 1rem;'><p style='margin: 0;'>✔ Free 2-Day Shipping</p><p style='margin: 0;'>✔ 1-Year Warranty Included</p><p style='margin: 0;'>✔ 90-Day Money Back</p><p style='margin: 0;'>✔ Works with Clumping Litter</p></div>"
-          }
-        },
-        "quantity_selector": { "type": "quantity_selector", "settings": {} },
-        "buy_buttons": { "type": "buy_buttons", "settings": { "show_dynamic_checkout": false } },
-        "inventory": { "type": "text", "settings": { "text": "High demand! Only 14 units left in stock.", "text_style": "body" } }
-      },
-      "block_order": [
-        "title",
-        "rating",
-        "price",
-        "description",
-        "features",
-        "quantity_selector",
-        "buy_buttons",
-        "inventory"
-      ]
-    },
-    "features": {
-      "type": "multicolumn",
-      "settings": {
-        "title": "Finally, a Litter Box That Cleans Itself",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      },
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icon-cat.png",
-            "title": "Automatic Cleaning",
-            "text": "<p>The PurrfectPotty automatically cleans itself after every use, so you can spend less time cleaning and more time with your furry friend.</p>"
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icon-odor.png",
-            "title": "Odor-Free Home",
-            "text": "<p>The enclosed design and carbon-filtered ventilation system trap and eliminate odors, keeping your home smelling fresh and clean.</p>"
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icon-health.png",
-            "title": "Health Monitoring",
-            "text": "<p>Track your cat's litter box habits and weight through our mobile app, so you can monitor their health and well-being.</p>"
-          }
-        }
-      },
-      "block_order": ["column1", "column2", "column3"]
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "See It In Action",
-        "video_url": "https://www.youtube.com/watch?v=some-video-id",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "Never Scoop Again.",
+        "subtitle": "The Future of Cat Care.",
+        "description": "The PurrfectClean Ultra automatically cleans, neutralizes odors, and tracks your cat's health.",
+        "price": "499"
       }
-    },
-    "reviews": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "faq": {
-      "type": "collapsible-content",
-      "settings": {
-        "caption": "",
-        "heading": "Frequently Asked Questions",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "row",
-        "color_scheme": "scheme-1",
-        "container_color_scheme": "scheme-2",
-        "open_first_collapsible": false
-      },
-      "blocks": {
-        "question1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What makes the PurrfectPotty different?",
-            "row_content": "<p>The PurrfectPotty is the only litter box that combines automatic cleaning, odor control, and health monitoring in one sleek and modern design.</p>"
-          }
-        },
-        "question2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Is it safe for my cat?",
-            "row_content": "<p>Yes! The PurrfectPotty is designed with your cat's safety in mind. It features a weight-sensitive sensor that prevents the cleaning cycle from running when your cat is inside.</p>"
-          }
-        },
-        "question3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What if my cat doesn't like it?",
-            "row_content": "<p>We offer a 90-day money-back guarantee, so you can try the PurrfectPotty risk-free. If your cat doesn't love it, simply return it for a full refund.</p>"
-          }
-        }
-      },
-      "block_order": ["question1", "question2", "question3"]
     }
   },
-  "order": ["hero", "features", "video", "reviews", "faq"]
+  "order": [
+    "custom_hero_q7qq8Y"
+  ]
 }
