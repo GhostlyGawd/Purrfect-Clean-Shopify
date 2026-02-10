@@ -12,7 +12,7 @@
     workspace = {
       onCreate = {
         # This prevents it from trying to install React/Next stuff
-        default.openFiles = [ "layout/theme.liquid" ];
+        default.openFiles = [ "Dawn/layout/theme.liquid" ];
       };
     };
   };
