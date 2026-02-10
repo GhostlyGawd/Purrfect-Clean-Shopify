@@ -1,44 +1,44 @@
-
 {
   "sections": {
     "hero": {
-      "type": "image-banner",
+      "type": "featured-product",
       "settings": {
-        "image": "shopify://shop_images/cat-litter-box.jpg",
-        "image_overlay_opacity": 50,
-        "image_height": "large",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "product": "the-purrfectpotty",
+        "media_position": "left",
+        "media_size": "two-thirds",
         "color_scheme": "scheme-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "secondary_background": false,
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       },
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "title": { "type": "title", "settings": {} },
+        "rating": { "type": "rating", "settings": {} },
+        "price": { "type": "price", "settings": {} },
+        "description": { "type": "description", "settings": {} },
+        "features": {
+          "type": "custom_liquid",
           "settings": {
-            "heading": "The Last Litter Box You'll Ever Need",
-            "heading_size": "h1"
+            "custom_liquid": "<div style='display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; margin-bottom: 1rem;'><p style='margin: 0;'>✔ Free 2-Day Shipping</p><p style='margin: 0;'>✔ 1-Year Warranty Included</p><p style='margin: 0;'>✔ 90-Day Money Back</p><p style='margin: 0;'>✔ Works with Clumping Litter</p></div>"
           }
         },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "The PurrfectPotty is the revolutionary self-cleaning litter box that does the dirty work for you. Say goodbye to scooping, scraping, and scrubbing for good.",
-            "text_style": "body"
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Now",
-            "button_link_1": "shopify://products/the-purrfectpotty"
-          }
-        }
+        "quantity_selector": { "type": "quantity_selector", "settings": {} },
+        "buy_buttons": { "type": "buy_buttons", "settings": { "show_dynamic_checkout": false } },
+        "inventory": { "type": "text", "settings": { "text": "High demand! Only 14 units left in stock.", "text_style": "body" } }
       },
-      "block_order": ["heading", "text", "buttons"]
+      "block_order": [
+        "title",
+        "rating",
+        "price",
+        "description",
+        "features",
+        "quantity_selector",
+        "buy_buttons",
+        "inventory"
+      ]
     },
     "features": {
       "type": "multicolumn",
@@ -143,11 +143,5 @@
       "block_order": ["question1", "question2", "question3"]
     }
   },
-  "order": [
-    "hero",
-    "features",
-    "video",
-    "reviews",
-    "faq"
-  ]
+  "order": ["hero", "features", "video", "reviews", "faq"]
 }
